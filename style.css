@@ -1,0 +1,122 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f7;
+    color: #333;
+}
+
+header {
+    background-color: #5d6d7e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Aligns items at the ends */
+    align-items: center; /* Center items vertically */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header .profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
+}
+
+/* Sections */
+main {
+    padding: 20px; /* Adjusted padding */
+    max-width: 800px; /* Centering the main content */
+    margin: 0 auto; /* Center alignment */
+}
+
+h2 {
+    color: #5d6d7e;
+    border-bottom: 2px solid #5d6d7e;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* About Me and Education Section */
+.introduction, .education-box {
+    background-color: #e0e6ec; /* Lighter version of #5d6d7e */
+    border: 1px solid #5d6d7e;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Links and Buttons */
+a {
+    color: #5d6d7e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+button.form-toggle-btn {
+    background-color: #5d6d7e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.form-toggle-btn:hover {
+    background-color: #495563;
+}
+
+button[type="submit"] {
+    background-color: #5d6d7e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #495563;
+}
+
+/* Footer */
+footer {
+    background-color: #5d6d7e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

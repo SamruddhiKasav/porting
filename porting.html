@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samruddhi Sahebrao Kasav - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="name-location">
+                <h1>Samruddhi Sahebrao Kasav</h1>
+                <p>Nashik, Maharashtra, India</p>
+            </div>
+            <img src="S:\Enginnering\3rd Year\Insem Question Paper\Port 2\Sam.jpg" alt="Profile Image" class="profile-image">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="introduction">
+            <h2>About Me</h2>
+            <p>Hello! I’m Samruddhi Sahebrao Kasav, a dedicated student pursuing my degree at Loknete Gopinathji Munde Institute of Engineering Education & Research. I hold a diploma in Computer Engineering from Sandip Foundation's Sandip Polytechnic.</p>
+            <p>My interests span C++, Java, Full Stack Development, Data Science, and Database Administration. I am passionate about learning and applying new technologies to real-world projects.</p>
+            <p>When I’m not coding, I enjoy reading and exploring nature. I am always eager to connect with like-minded individuals and collaborate on exciting projects.</p>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <article class="blog-post">
+                <h3>Unleashing Innovations: The Generative AI Revolution</h3>
+                <p><strong>Date:</strong> September 21, 2024</p>
+                <p>I recently attended a workshop titled "Unleashing Innovations: The Generative AI Revolution." The event explored the transformative power of generative AI. I left feeling empowered and more knowledgeable about its impact on various industries.</p>
+            </article>
+            <article class="blog-post">
+                <h3>Data Science: Transforming Data into Solutions</h3>
+                <p><strong>Date:</strong> July 10, 2023</p>
+                <p>Data science helps solve complex problems by uncovering patterns in large datasets. Through statistical analysis and machine learning, I've learned to make informed decisions and optimize processes.</p>
+            </article>
+            <article class="blog-post">
+                <h3>Exploring New Technologies</h3>
+                <p><strong>Date:</strong> September 10, 2024</p>
+                <p>Exploring new technologies starts with curiosity. I read articles, attend workshops, and build small projects to grasp their potential. Each step brings me closer to understanding the future of technology.</p>
+            </article>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <ul>
+                <li>
+                    <strong>Local Buddy</strong> - A platform helping tourists discover trending local specialties. We aim to provide a comprehensive guide on the same platform, overcoming existing site limitations.
+                    <br><br><em><b>Technologies Used: HTML, CSS, JavaScript, PHP, MySQL</b></em>
+                    <br><strong><a href="https://ijsrcseit.com/home/issue/view/article.php?id=CSEIT239769">Research Paper</a></strong>
+                </li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-box">
+                <h3>2023-2026</h3>
+                <p><strong>Bachelor of Engineering</strong><br>SAVITRI BAI PHULE PUNE UNIVERSITY</p>
+            </div>
+            <div class="education-box">
+                <h3>2020-2023</h3>
+                <p><strong>Diploma</strong><br>Sandip Foundation's Sandip Polytechnic<br>Grade: First class distinction.</p>
+            </div>
+            <div class="education-box">
+                <h3>2020</h3>
+                <p><strong>SSC</strong><br>Board of Secondary Education<br>
+                    School Name: Aadarsha Madhyamic Vidayalay <br>Percentage:90%</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p><strong>Address:</strong> Nashik, India</p>
+            <p><strong>Email:</strong> <a href="mailto:kasavsamruddhi@gmail.com">kasavsamruddhi@gmail.com</a></p>
+            <p><strong>Contact No:</strong> 9421502204</p>
+        
+            <div class="button-container">
+                <button class="form-toggle-btn" onclick="document.getElementById('contact-form').style.display='block'; document.getElementById('feedback-form').style.display='none';">Contact Form</button>
+                <button class="form-toggle-btn" onclick="document.getElementById('feedback-form').style.display='block'; document.getElementById('contact-form').style.display='none';">Feedback Form</button>
+            </div>
+        
+            <div id="form-container">
+                <div id="contact-form" class="form-section" style="display:none;">
+                    <h3>Contact Form</h3>
+                    <form action="contact_submission.php" method="POST">
+                        <label for="contact-name">Name:</label>
+                        <input type="text" id="contact-name" name="name" placeholder="Enter your name" required>
+        
+                        <label for="contact-email">Email:</label>
+                        <input type="email" id="contact-email" name="email" placeholder="Enter your email" required>
+        
+                        <label for="contact-message">Message:</label>
+                        <textarea id="contact-message" name="message" placeholder="Write your message" rows="4" required></textarea>
+        
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+        
+                <div id="feedback-form" class="form-section" style="display:none;">
+                    <h3>Feedback Form</h3>
+                    <form action="feedback_submission.php" method="POST">
+                        <label for="feedback-name">Name:</label>
+                        <input type="text" id="feedback-name" name="name" placeholder="Enter your name" required>
+        
+                        <label for="feedback-email">Email:</label>
+                        <input type="email" id="feedback-email" name="email" placeholder="Enter your email" required>
+        
+                        <label for="feedback-message">Feedback:</label>
+                        <textarea id="feedback-message" name="message" placeholder="Write your feedback" rows="4" required></textarea>
+        
+                        <button type="submit">Send Feedback</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Samruddhi Sahebrao Kasav</p>
+    </footer>
+</body>
+</html>
